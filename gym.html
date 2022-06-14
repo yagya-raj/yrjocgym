@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YRJoc Fitness </title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url("gym.jpg");
+        background-size: 100%;
+     }
+        
+    .left{display: inline-block;
+        
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        
+       
+
+
+    }
+    .mid{ display: block;
+        width: 33%;
+        margin:20px auto;
+    
+        
+        
+        
+        /* margin: auto;
+        display: block;
+        width: 33%; */
+        
+        
+       
+
+        }
+    .right{position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    
+    }
+    .navbar{display: inline-block;}
+    .navbar li{display: inline-block;
+        width:auto;
+    color: white;
+    padding: 6px;}
+
+    .navbar li a{color: white;
+    text-decoration: none;
+font-size: 20px;
+}
+a:hover{background-color: red;}
+
+
+.left img{width: 128px;}
+.left div{text-align: center;}
+.btn{margin: 0px 9px;
+background-color: black;
+color: white;
+padding: 4px 14px;
+border: 2px solid gray;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+.btn:hover{background-color: gray;}
+
+.container{border: 2px solid green;
+padding: 2px 2px;
+margin: 70px 20px;
+width: 312px;
+height: 254px;
+border-radius: 12px;
+background-color:#ff2f66;
+}
+    
+.fr input{text-align: center;
+display: block;
+width: 207px ;
+padding: 7px;
+margin: 5px auto;
+border: 1px solid black;
+font-size: 12px;}
+
+.form{height: 122px;}
+.btn:hover{background-color: green}
+.btn{margin: 2px 2px;
+position: relative;
+top: -3px;
+left: 59px;
+padding: -4px 8px;
+margin: 0px 9px;
+}
+.container h1{text-align: center;
+font-size: 12px;
+background-color: blue;}
+
+#select{background-color: hsl(129, 95%, 34%);
+position: relative;
+left: 197px;
+margin: -49px 1px;
+padding: 5px px;}
+
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+
+        <div class="left">
+       <img src="logo.jpg" alt="">
+       <div>Yagya Fitness center</div>
+    </div>
+
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About us</a> </li>
+            <li><a href="#">Fitness calculator</a> </li>
+            <li><a href="#">Contact us</a> </li>
+
+            
+        </ul>
+    </div>
+
+    <!-- Right box for buttons -->
+    <div class="right">
+<button class="btn">Call us Now</button><button class="btn">Email Us </button>
+    </div>
+    </header>
+    <div class="container">
+       <h1> Please fill the form here to join the gym </h1>
+        <form action="noaction.php" class="fr">
+            <input type="text" placeholder="please enter your name">
+            <input type="number" placeholder="please enter your age">
+            <input type="text" placeholder="please enter your gender">
+            <input type="text" placeholder="please enter your address">
+            
+            <div>
+                <input  type="text" placeholder="please enter your shift required">
+                <select id="select">
+                    <option > Morning </option>
+                    <option > Evening </option>
+                </select>
+            </div>
+            <button class="btn">Submit now</button>
+            
+
+
+        </form>
+    </div>
+</body>
+</html>
